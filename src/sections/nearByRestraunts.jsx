@@ -30,7 +30,7 @@ const GridItem1 = styled.div`
 display:flex;
 flex: 4;
 flex-direction: column;
-gap: 2px;
+gap: 10px;
 
 
 `
