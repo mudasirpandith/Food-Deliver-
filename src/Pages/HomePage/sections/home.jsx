@@ -4,7 +4,6 @@ const Container = styled.div`
   background: rgb(249,216,213);
 background: linear-gradient(274deg, rgba(249,216,213,1) 0%, rgba(249,210,209,1) 17%, rgba(229,211,207,1) 41%, rgba(246,242,241,1) 83%, rgba(240,238,237,0.9897681484703257) 100%);
    `;
-
 const Grid = styled.div`
     margin:0 10px;
     display: flex;
@@ -78,6 +77,7 @@ const SelectResInput = styled.input`
     color: #212529;
     border-radius: 10px;
     @media screen and (max-width:500px) {
+        flex: 1;
         width: 260px;
         padding: 20px 20px;
         
@@ -98,6 +98,7 @@ const SelectResButton = styled.button`
     color: white;
     height: 50px;
     @media screen and (max-width:500px) {
+        flex: 1;
     width: 150px;
     padding: 20px;
         
@@ -147,7 +148,7 @@ export const Home = () => {
 
                 </GridItem1>
                 <GridItem2>
-                    <Image src='https://bslthemes.com/html/quickeat/assets/img/photo-1.png' />
+                    <Image loading='lazy' src='https://bslthemes.com/html/quickeat/assets/img/photo-1.png' />
                 </GridItem2>
 
             </Grid>

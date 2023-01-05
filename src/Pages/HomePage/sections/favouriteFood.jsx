@@ -121,7 +121,7 @@ export const FavouriteFood = () => {
         <Container>
             <Grid>
                 <GridItem1>
-                    <Image src='https://bslthemes.com/html/quickeat/assets/img/photo-3.png' />
+                    <Image loading='lazy' src='https://bslthemes.com/html/quickeat/assets/img/photo-3.png' />
                     <Icons>
                         <Icon>
                             🍔 Burgers

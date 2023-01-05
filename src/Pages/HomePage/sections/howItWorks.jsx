@@ -75,7 +75,7 @@ export const HowItWorks = () => {
             </SmallText>
             <Grid>
                 <GridItem>
-                    <Image src='https://bslthemes.com/html/quickeat/assets/img/illustration-1.png' />
+                    <Image loading='lazy' src='https://bslthemes.com/html/quickeat/assets/img/illustration-1.png' />
                     <Steps>
                         <Span>01</Span> Select Restaurant
                     </Steps>
@@ -85,7 +85,7 @@ export const HowItWorks = () => {
                     </SmallText>
                 </GridItem>
                 <GridItem>
-                    <Image src='https://bslthemes.com/html/quickeat/assets/img/illustration-2.png' />
+                    <Image loading='lazy' src='https://bslthemes.com/html/quickeat/assets/img/illustration-2.png' />
                     <Steps>
                         <Span>02</Span> Select menu
                     </Steps>
@@ -95,7 +95,7 @@ export const HowItWorks = () => {
                     </SmallText>
                 </GridItem>
                 <GridItem>
-                    <Image src='https://bslthemes.com/html/quickeat/assets/img/illustration-3.png' />
+                    <Image loading='lazy' src='https://bslthemes.com/html/quickeat/assets/img/illustration-3.png' />
                     <Steps>
                         <Span>03</Span> Wait for delivery
                     </Steps>
