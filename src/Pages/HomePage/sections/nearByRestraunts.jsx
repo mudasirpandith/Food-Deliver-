@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { RestrauntCard } from '../compoents/restrauntCard';
+import { RestrauntCard } from '../../../compoents/restrauntCard';
 const Wrapper = styled.div`
     display: flex;
     margin:50px 10px 100px 10px ;
@@ -30,7 +30,7 @@ const GridItem1 = styled.div`
 display:flex;
 flex: 4;
 flex-direction: column;
-gap: 10px;
+gap: 2px;
 
 
 `
@@ -75,6 +75,8 @@ const Button = styled.button`
     
 `
 export const NearByRestraunts = () => {
+
+
     return (
         <Wrapper>
 

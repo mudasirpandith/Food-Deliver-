@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 const Container = styled.div`
-   background: rgb(189,225,228);
-   background: linear-gradient(274deg, rgba(189,225,228,1) 0%, rgba(214,250,193,1) 17%, rgba(229,211,207,1) 41%, rgba(249,246,244,1) 100%);
-  
+  background: rgb(249,216,213);
+background: linear-gradient(274deg, rgba(249,216,213,1) 0%, rgba(249,210,209,1) 17%, rgba(229,211,207,1) 41%, rgba(246,242,241,1) 83%, rgba(240,238,237,0.9897681484703257) 100%);
    `;
 
 const Grid = styled.div`
@@ -61,10 +60,11 @@ margin-bottom: 40px;
 `
 const SelectRes = styled.div`
     display: flex;
-  
+ 
     @media screen and (max-width:500px) {
         gap: 20px;
         flex-direction: column;
+    
         
     }
 `
@@ -98,7 +98,7 @@ const SelectResButton = styled.button`
     color: white;
     height: 50px;
     @media screen and (max-width:500px) {
-        width: 150px;
+    width: 150px;
     padding: 20px;
         
     }
@@ -112,6 +112,25 @@ const SelectResButton = styled.button`
 `
 
 export const Home = () => {
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            console.log("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        console.log("Latitude: " + position.coords.latitude +
+            "Longitude: " + position.coords.longitude)
+    }
+
+
+    function handleClickLocation() {
+        getLocation()
+    }
+
     return (
         <Container style={{ height: window.innerHeight }}>
 
@@ -123,7 +142,7 @@ export const Home = () => {
                     <SmallText>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Explicabo exercitationem enim, fugit,culpa fugiat vero  <br /> perspiciatis similique odit error  iure!</SmallText>
                     <SelectRes>
                         <SelectResInput type='text' placeholder='Choose a Restraunt' />
-                        <SelectResButton>ORDER NOW</SelectResButton>
+                        <SelectResButton onClick={handleClickLocation} >ORDER NOW</SelectResButton>
                     </SelectRes>
 
                 </GridItem1>
