@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const Container = styled.div`
 display: flex;
 background: rgb(249,216,213);
-background: linear-gradient(274deg, rgba(249,216,213,1) 0%, rgba(245,224,224,1) 17%, rgba(229,211,207,1) 41%, rgba(246,242,241,1) 83%, rgba(240,238,237,0.9897681484703257) 100%);
-padding-bottom:30px ;
+background: linear-gradient(274deg, rgba(249,216,213,1) 0%, rgba(249,210,209,1) 17%, rgba(229,211,207,1) 41%, rgba(246,242,241,1) 83%, rgba(240,238,237,0.9897681484703257) 100%);
+ padding-bottom:30px ;
 margin-bottom: -50px;
 `
 const Grid = styled.div`
@@ -14,6 +14,7 @@ gap: 30px;
 @media screen and (max-width:1200px) {
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 50px;
    }
 
 

@@ -6,6 +6,9 @@ import { NearByRestraunts } from './Pages/HomePage/sections/nearByRestraunts';
 import { FavouriteFood } from './Pages/HomePage/sections/favouriteFood';
 import { ServiceNumbers } from './Pages/HomePage/sections/serviceNumbers';
 import { NavBar } from './compoents/navBar';
+import { CustomerReview } from './Pages/HomePage/customerReview';
+import { JoinUs } from './Pages/HomePage/sections/joinUs';
+import { Footer } from './Pages/HomePage/sections/footer';
 const Container = styled.div`
 display:flex;
 
@@ -20,6 +23,9 @@ export const Directory = () => {
             <NearByRestraunts />
             <FavouriteFood />
             <ServiceNumbers />
+            <CustomerReview />
+            {/* <JoinUs /> */}
+            <Footer />
         </Container>
     )
 }
